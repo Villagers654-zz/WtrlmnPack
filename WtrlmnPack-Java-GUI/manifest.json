@@ -10,9 +10,9 @@
     "name": "WtrlmnPack-Java-GUI",
     "uuid": "6188fb67-6580-4c03-8b2d-3fee8de048f5",
     "version": [
+      3,
       0,
-      0,
-      3
+      2
     ]
   },
   "modules": [

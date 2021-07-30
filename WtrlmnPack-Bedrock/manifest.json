@@ -10,9 +10,9 @@
     "name": "WtrlmnPack",
     "uuid": "c66f119e-783d-4eca-a811-249d059f5e77",
     "version": [
+      3,
       0,
-      0,
-      3
+      2
     ]
   },
   "modules": [
