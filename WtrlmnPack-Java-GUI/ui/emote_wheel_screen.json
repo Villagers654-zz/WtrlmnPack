@@ -1,0 +1,7 @@
+{
+  "emote_wheel_screen": {
+    "$default_text_color": [ 0.7, 0.7, 0.7 ],
+    "$screen_content": "emote_wheel_dx.center_screen",
+    "$screen_bg_content": "emote_wheel_dx.full_screen"
+  }
+}

@@ -1,0 +1,81 @@
+/*File made by @CrisXolt.
+//(c) Don't use any code design without permission!*/
+{
+  "namespace": "book_java_dx",
+
+  "book_base": {
+    "type": "image",
+    "texture": "assets/minecraft/textures/gui/book",
+    "$book_uv|default": [ 0, 0 ],
+    "$book_uv_size|default": [ 0, 0 ],
+    "uv": "$book_uv",
+    "uv_size": "$book_uv_size"
+  },
+
+  /*////// Base //////*/
+
+  /* Panel */
+
+  "left_book_panel@book_java_dx.book_base": {
+    "size": [ 146, 180 ],
+    "variables": [
+      { "requires": "($book_resolution = 256x)",  "$book_uv": [ 20, 1 ],   "$book_uv_size": [ 146, 180 ] },
+      { "requires": "($book_resolution = 512x)",  "$book_uv": [ 40, 2 ],   "$book_uv_size": [ 292, 360 ] },
+      { "requires": "($book_resolution = 1024x)", "$book_uv": [ 80, 4 ],   "$book_uv_size": [ 584, 720 ] },
+      { "requires": "($book_resolution = 2048x)", "$book_uv": [ 160, 8 ],  "$book_uv_size": [ 1168, 1440 ] },
+      { "requires": "($book_resolution = 4096x)", "$book_uv": [ 320, 16 ], "$book_uv_size": [ 2336, 2880 ] },
+      { "requires": "($book_resolution = 8192x)", "$book_uv": [ 640, 32 ], "$book_uv_size": [ 4672, 5760 ] }
+    ]
+  },
+
+  "right_book_panel@book_java_dx.left_book_panel": { },
+
+  "signing_book_panel@book_java_dx.left_book_panel": { },
+
+  /* Buttons */
+
+  "left_button@book_java_dx.book_base": {
+    "size": [ 23, 13 ],
+    "variables": [
+      { "requires": "($book_resolution = 256x)",  "$book_uv": [ 0, 205 ],  "$book_uv_size": [ 23, 13 ] },
+      { "requires": "($book_resolution = 512x)",  "$book_uv": [ 0, 410 ],  "$book_uv_size": [ 46, 26 ] },
+      { "requires": "($book_resolution = 1024x)", "$book_uv": [ 0, 820 ],  "$book_uv_size": [ 92, 52 ] },
+      { "requires": "($book_resolution = 2048x)", "$book_uv": [ 0, 1640 ], "$book_uv_size": [ 184, 104 ] },
+      { "requires": "($book_resolution = 4096x)", "$book_uv": [ 0, 3280 ], "$book_uv_size": [ 368, 208 ] },
+      { "requires": "($book_resolution = 8192x)", "$book_uv": [ 0, 6560 ], "$book_uv_size": [ 736, 416 ] }
+    ]
+  },
+
+  "left_button_hover@book_java_dx.left_button": {
+    "variables": [
+      { "requires": "($book_resolution = 256x)",  "$book_uv": [ 23, 205 ],   "$book_uv_size": [ 23, 13 ] },
+      { "requires": "($book_resolution = 512x)",  "$book_uv": [ 46, 410 ],   "$book_uv_size": [ 46, 26 ] },
+      { "requires": "($book_resolution = 1024x)", "$book_uv": [ 92, 820 ],   "$book_uv_size": [ 92, 52 ] },
+      { "requires": "($book_resolution = 2048x)", "$book_uv": [ 184, 1640 ], "$book_uv_size": [ 184, 104 ] },
+      { "requires": "($book_resolution = 4096x)", "$book_uv": [ 368, 3280 ], "$book_uv_size": [ 368, 208 ] },
+      { "requires": "($book_resolution = 8192x)", "$book_uv": [ 736, 6560 ], "$book_uv_size": [ 736, 416 ] }
+    ]
+  },
+
+  "right_button@book_java_dx.left_button": {
+    "variables": [
+      { "requires": "($book_resolution = 256x)",  "$book_uv": [ 0, 192 ],  "$book_uv_size": [ 23, 13 ] },
+      { "requires": "($book_resolution = 512x)",  "$book_uv": [ 0, 384 ],  "$book_uv_size": [ 46, 26 ] },
+      { "requires": "($book_resolution = 1024x)", "$book_uv": [ 0, 768 ],  "$book_uv_size": [ 92, 52 ] },
+      { "requires": "($book_resolution = 2048x)", "$book_uv": [ 0, 1536 ], "$book_uv_size": [ 184, 104 ] },
+      { "requires": "($book_resolution = 4096x)", "$book_uv": [ 0, 3072 ], "$book_uv_size": [ 368, 208 ] },
+      { "requires": "($book_resolution = 8192x)", "$book_uv": [ 0, 6144 ], "$book_uv_size": [ 736, 416 ] }
+    ]
+  },
+  
+  "right_button_hover@book_java_dx.left_button": {
+    "variables": [
+      { "requires": "($book_resolution = 256x)",  "$book_uv": [ 23, 192 ],   "$book_uv_size": [ 23, 13 ] },
+      { "requires": "($book_resolution = 512x)",  "$book_uv": [ 46, 384 ],   "$book_uv_size": [ 46, 26 ] },
+      { "requires": "($book_resolution = 1024x)", "$book_uv": [ 92, 768 ],   "$book_uv_size": [ 92, 52 ] },
+      { "requires": "($book_resolution = 2048x)", "$book_uv": [ 184, 1536 ], "$book_uv_size": [ 184, 104 ] },
+      { "requires": "($book_resolution = 4096x)", "$book_uv": [ 368, 3072 ], "$book_uv_size": [ 368, 208 ] },
+      { "requires": "($book_resolution = 8192x)", "$book_uv": [ 736, 6144 ], "$book_uv_size": [ 736, 416 ] }
+    ]
+  }
+}

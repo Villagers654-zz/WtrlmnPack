@@ -1,0 +1,9 @@
+﻿##  Raid Texts Input
+raid.name=Raid	#
+raid.progress=Mobs remaining:	#
+
+##  Raid Texts Output
+bar.event.raid.name=Serbuan	#
+bar.event.raid.remaining.2=Serbuan - Mob tersisa: 2	#
+bar.event.raid.remaining.1=Serbuan - Mob tersisa: 1	#
+bar.event.raid.remaining.0=Serbuan - Mob tersisa: 0	#

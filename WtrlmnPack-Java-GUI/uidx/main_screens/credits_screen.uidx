@@ -1,0 +1,354 @@
+/*File made by @CrisXolt.
+//(c) Don't use any code design without permission!*/
+{
+  "namespace": "credits_dx",
+
+  /*//// Text assets ////*/
+
+  "separator_text": {
+    "type": "panel",
+    "size": [ "100%", 12 ]
+  },
+
+  "base_label": {
+    "type": "label",
+    "size": [ "100%", "default" ],
+    "shadow": true,
+    "font_scale_factor": 1.0,
+    "line_padding": 2.0,
+    "enable_profanity_filter": false
+    /*I disable this filter because no one has a profanity words
+    and still will be censored in some names in credits, i think.*/
+  },
+
+  "sect_text": {
+    "type": "stack_panel",
+    "size": [ "100%", "100%c" ],
+    "controls": [
+      {
+        "text_panel": {
+          "type": "panel",
+          "size": [ "100%", "100%c" ],
+          "controls": [
+            {
+               "base_label@credits_dx.base_label": {
+                "text_alignment": "center",
+                "text": "$sect_text"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "panel": {
+          "type": "panel",
+          "size": [ "100%", 12 ]
+        }
+      }
+    ]
+  },
+
+  "tnam_text": {
+    "type": "stack_panel",
+    "size": [ "100%", "100%c" ],
+    "controls": [
+      {
+        "text_panel": {
+          "type": "panel",
+          "size": [ "100%", "100%c" ],
+          "controls": [
+            { 
+              "base_label@credits_dx.base_label": {
+                "text_alignment": "left",
+                "text": "$tnam_text"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "panel": {
+          "type": "panel",
+          "size": [ "100%", 12 ]
+        }
+      }
+    ]
+  },
+
+  "name_text": {
+    "type": "stack_panel",
+    "size": [ "100%", "100%c" ],
+    "controls": [
+      {
+        "text_panel": {
+          "type": "panel",
+          "size": [ "100%", "100%c" ],
+          "controls": [
+            { 
+              "base_label@credits_dx.base_label": {
+                "anchor_from": "top_right",
+                "anchor_to": "top_right",
+                "text_alignment": "left",
+                "text": "$name_text",
+                "size": [ "100%-40px", "default" ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "panel": {
+          "type": "panel",
+          "size": [ "100%", 12 ]
+        }
+      }
+    ]
+  },
+
+  "pnam_text": {
+    "type": "stack_panel",
+    "size": [ "100%", "100%c" ],
+    "$lnam_text|default": "", 
+    "$rnam_text|default": "", 
+    "controls": [
+      {
+        "text_panel": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": [ "100%", 10 ],
+          "controls": [
+            {
+              "left_label@credits_dx.base_label": {
+                "size": [ "default", 10 ],
+                "color": "$color_format",
+                "text": "$lnam_text"
+              }
+            },
+            {
+              "playername_label@credits_dx.base_label": {
+                "size": [ "default", 10 ],
+                "color": "$color_format",
+                "text": "#player_name",
+                "bindings": [
+                  {
+                    "binding_name": "#player_name"
+                  }
+                ]
+              }
+            },
+            {
+              "right_label@credits_dx.base_label": {
+                "size": [ "default", 10 ],
+                "color": "$color_format",
+                "text": "$rnam_text"
+              }
+            },
+            {
+              "fill_panel": {
+                "type": "panel",
+                "size": [ "fill", 10 ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "panel": {
+          "type": "panel",
+          "size": [ "100%", 12 ]
+        }
+      }
+    ]
+  },
+
+  /*//// Credits text ////*/
+
+  "credits_text": {
+    "type": "stack_panel",
+    "size": [ 274, "100%c" ],
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "controls": [
+      { "top": { "type": "panel", "size": [ 0, 41 ] } },
+      { "title_panel@start_dx.title_panel": { "$splash_text_visible": false } },
+      { "separator_0": { "type": "panel", "size": [ 0, 55 ] } },
+      { 
+        "end_text@end_text_dx.end_text": {
+          "bindings": [
+            {
+              "binding_name": "#show_end_poem",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      { 
+        "separator_1": {
+          "type": "panel",
+          "size": [ 0, 96 ],
+          "bindings": [
+            {
+              "binding_name": "#show_end_poem",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      { "credits_bedrock_text@credits_bedrock_text_dx.credits_bedrock_text": { } }
+    ]
+  },
+
+  /*//// Panels ////*/
+
+  "skip_panel": {
+    "type": "panel",
+    "layer": 2,
+    "controls": [
+      {
+        "skip_button@common_buttons_dx.main_button_74": {
+          "$pressed_button_name": "button.menu_exit",
+          "anchor_from": "bottom_right",
+          "anchor_to": "bottom_right",
+          "size": [ 74, 20 ],
+          "$button_text": "credits.skip",
+          "offset": [ -8, -8 ],
+          "bindings": [
+            {
+              "binding_name": "#skip_button_visible",
+              "binding_name_override": "#visible",
+              "binding_type": "global"
+            }
+          ],
+          "anims": [ "@credits.anim_button_wait" ]
+        }
+      },
+      {
+        "exit_credits_input_panel": {
+          "type": "input_panel",
+          "button_mappings": [
+            {
+              "from_button_id": "button.menu_cancel",
+              "to_button_id": "button.menu_exit",
+              "mapping_type": "global"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "main_credits_panel": {
+    "type": "panel",
+    "clips_children": true,
+    "size": [ "100%", "100%" ],
+    "controls": [
+      {
+        "bottom_panel": {
+          "type": "panel",
+          "size": [ "100%", 1 ],
+          "anchor_from": "bottom_middle",
+          "anchor_to": "bottom_middle",
+          "controls": [
+            { "credits_text@credits_dx.credits_text": { "anims": [ "@credits_dx.anim_text_scroll" ] } }
+          ]
+        }
+      }
+    ]
+  },
+
+  "anim_text_scroll": {
+    "anim_type": "offset",
+    "from": [ 0, 0 ],
+    "to": [ 0, -48000 ],
+    "duration": 3600
+  },
+
+  "background": {
+    "type": "panel",
+    "clips_children": true,
+    "size": [ "100%", "100%" ],
+    "controls": [ 
+      {
+        "background_image@java_gui_common.credits_background": {
+          "layer": -10,
+          "size": [ "100%", "2000%" ],
+          "anims": [ "@credits_dx.anim_background_scroll" ]
+        }
+      }
+    ]
+  },
+
+  "anim_background_scroll": {
+    "anim_type": "offset",
+    "from": [ 0, "-0%y" ],
+    "to": [ 0, "-180%y" ],
+    "duration": 3600
+  },
+
+  /*//// Screen ////*/
+
+  "credits_screen_content": {
+    "type": "panel",
+    "controls": [
+      { "main_credits_panel@credits_dx.main_credits_panel": { } },
+      {
+        "vignette_renderer": {
+          "type": "custom",
+          "renderer": "vignette_renderer",
+          "layer": 2,
+          "property_bag": {
+            "opacity_override": 0.0
+          }
+        }
+      },
+      { "fade_in_image@credits.fade_in_image": { "layer": 1 } },
+      { 
+        "credits_factory": {
+          "type": "factory",
+          "control_ids": {
+            "fade_out_image": "fade_out_image@credits.fade_out_image",
+            "skip_button": "skip_button@credits_dx.skip_panel"
+          }
+        }
+      },
+      {
+        "whole_screen_input_panel": {
+          "type": "input_panel",
+          "layer": 1,
+          "button_mappings": [
+            {
+              "from_button_id": "button.menu_select",
+              "to_button_id": "button.show_skip",
+              "mapping_type": "global"
+            },
+            {
+              "from_button_id": "button.menu_ok",
+              "to_button_id": "button.show_skip",
+              "mapping_type": "global"
+            },
+            {
+              "from_button_id": "button.menu_cancel",
+              "to_button_id": "button.show_skip",
+              "mapping_type": "global"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "center_screen": {
+    "type": "panel",
+    "controls": [
+      { "background@credits_dx.background": { "ignored": "(not $is_holographic)" } }
+    ]
+  },
+
+  "full_screen": {
+    "type": "panel",
+    "controls": [
+      { "credits_screen_content@credits_dx.credits_screen_content": { } },
+      { "background@credits_dx.background": { "ignored": "$is_holographic" } }
+    ]
+  }
+}

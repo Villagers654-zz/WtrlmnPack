@@ -1,0 +1,19 @@
+/*File modified by @CrisXolt.
+//(c) Don't use any code design without permission!*/
+{
+  "trade_screen": {
+    "variables": [
+      {
+        "requires": "$desktop_screen",
+        "$screen_content": "trade_dx.center_screen",
+        "$screen_bg_content": "trade_dx.full_screen",
+        "$gamepad_cursor": true
+      },
+      {
+        "requires": "$pocket_screen",
+        "$screen_content": "trade_pocket.trade_panel",
+        "$gamepad_cursor": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "chat_screen": {
+    "$screen_content": "chat_dx.chat_screen_content",
+    "$screen_bg_content": "common.empty_panel"
+  }
+}

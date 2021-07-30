@@ -1,0 +1,8 @@
+/*File modified by @CrisXolt.
+//(c) Don't use any code design without permission!*/
+{
+  "mob_effect_screen": {
+    "$screen_content": "common.empty_panel",
+    "$screen_bg_content": "mob_effect_dx.main_screen"
+  }
+}

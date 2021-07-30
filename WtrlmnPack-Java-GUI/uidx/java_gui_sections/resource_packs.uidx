@@ -1,0 +1,113 @@
+/*File made by @CrisXolt.
+//(c) Don't use any code design without permission!*/
+{
+  "namespace": "resource_packs_java_dx",
+
+  "resource_packs_base": {
+    "type": "image",
+    "size": [ 32, 32 ],
+    "texture": "assets/minecraft/textures/gui/resource_packs",
+    "$resource_packs_uv|default": [ 0, 0 ],
+    "$resource_packs_uv_size|default": [ 0, 0 ],
+    "uv": "$resource_packs_uv",
+    "uv_size": "$resource_packs_uv_size"
+  },
+
+  /*////// Base //////*/
+  
+  /* Select Button */
+
+  "select_resource_pack_button@resource_packs_java_dx.resource_packs_base": {
+    "variables": [
+      { "requires": "($resource_packs_resolution = 256x)",  "$resource_packs_uv_size": [ 32, 32 ] },
+      { "requires": "($resource_packs_resolution = 512x)",  "$resource_packs_uv_size": [ 64, 64 ] },
+      { "requires": "($resource_packs_resolution = 1024x)", "$resource_packs_uv_size": [ 128, 128 ] },
+      { "requires": "($resource_packs_resolution = 2048x)", "$resource_packs_uv_size": [ 256, 256 ] },
+      { "requires": "($resource_packs_resolution = 4096x)", "$resource_packs_uv_size": [ 512, 512 ] },
+      { "requires": "($resource_packs_resolution = 8192x)", "$resource_packs_uv_size": [ 1024, 1024 ] }
+    ]
+  },
+
+  "select_resource_pack_button_hover@resource_packs_java_dx.resource_packs_base": {
+    "variables": [
+      { "requires": "($resource_packs_resolution = 256x)",  "$resource_packs_uv": [ 0, 32 ],   "$resource_packs_uv_size": [ 32, 32 ] },
+      { "requires": "($resource_packs_resolution = 512x)",  "$resource_packs_uv": [ 0, 64 ],   "$resource_packs_uv_size": [ 64, 64 ] },
+      { "requires": "($resource_packs_resolution = 1024x)", "$resource_packs_uv": [ 0, 128 ],  "$resource_packs_uv_size": [ 128, 128 ] },
+      { "requires": "($resource_packs_resolution = 2048x)", "$resource_packs_uv": [ 0, 256 ],  "$resource_packs_uv_size": [ 256, 256 ] },
+      { "requires": "($resource_packs_resolution = 4096x)", "$resource_packs_uv": [ 0, 512 ],  "$resource_packs_uv_size": [ 512, 512 ] },
+      { "requires": "($resource_packs_resolution = 8192x)", "$resource_packs_uv": [ 0, 1024 ], "$resource_packs_uv_size": [ 1024, 1024 ] }
+    ]
+  },
+
+  /* Unselect Button */
+
+  "unselect_resource_pack_button@resource_packs_java_dx.resource_packs_base": {
+    "variables": [
+      { "requires": "($resource_packs_resolution = 256x)",  "$resource_packs_uv": [ 32, 0 ],   "$resource_packs_uv_size": [ 32, 32 ] },
+      { "requires": "($resource_packs_resolution = 512x)",  "$resource_packs_uv": [ 64, 0 ],   "$resource_packs_uv_size": [ 64, 64 ] },
+      { "requires": "($resource_packs_resolution = 1024x)", "$resource_packs_uv": [ 128, 0 ],  "$resource_packs_uv_size": [ 128, 128 ] },
+      { "requires": "($resource_packs_resolution = 2048x)", "$resource_packs_uv": [ 256, 0 ],  "$resource_packs_uv_size": [ 256, 256 ] },
+      { "requires": "($resource_packs_resolution = 4096x)", "$resource_packs_uv": [ 512, 0 ],  "$resource_packs_uv_size": [ 512, 512 ] },
+      { "requires": "($resource_packs_resolution = 8192x)", "$resource_packs_uv": [ 1024, 0 ], "$resource_packs_uv_size": [ 1024, 1024 ] }
+    ]
+  },
+
+  "unselect_resource_pack_button_hover@resource_packs_java_dx.resource_packs_base": {
+    "variables": [
+      { "requires": "($resource_packs_resolution = 256x)",  "$resource_packs_uv": [ 32, 32 ],     "$resource_packs_uv_size": [ 32, 32 ] },
+      { "requires": "($resource_packs_resolution = 512x)",  "$resource_packs_uv": [ 64, 64 ],     "$resource_packs_uv_size": [ 64, 64 ] },
+      { "requires": "($resource_packs_resolution = 1024x)", "$resource_packs_uv": [ 128, 128 ],   "$resource_packs_uv_size": [ 128, 128 ] },
+      { "requires": "($resource_packs_resolution = 2048x)", "$resource_packs_uv": [ 256, 256 ],   "$resource_packs_uv_size": [ 256, 256 ] },
+      { "requires": "($resource_packs_resolution = 4096x)", "$resource_packs_uv": [ 512, 512 ],   "$resource_packs_uv_size": [ 512, 512 ] },
+      { "requires": "($resource_packs_resolution = 8192x)", "$resource_packs_uv": [ 1024, 1024 ], "$resource_packs_uv_size": [ 1024, 1024 ] }
+    ]
+  }, 
+
+  /* Move Down Button */
+
+  "move_down_resource_pack_button@resource_packs_java_dx.resource_packs_base": {
+    "variables": [
+      { "requires": "($resource_packs_resolution = 256x)",  "$resource_packs_uv": [ 64, 0 ],   "$resource_packs_uv_size": [ 32, 32 ] },
+      { "requires": "($resource_packs_resolution = 512x)",  "$resource_packs_uv": [ 128, 0 ],  "$resource_packs_uv_size": [ 64, 64 ] },
+      { "requires": "($resource_packs_resolution = 1024x)", "$resource_packs_uv": [ 256, 0 ],  "$resource_packs_uv_size": [ 128, 128 ] },
+      { "requires": "($resource_packs_resolution = 2048x)", "$resource_packs_uv": [ 512, 0 ],  "$resource_packs_uv_size": [ 256, 256 ] },
+      { "requires": "($resource_packs_resolution = 4096x)", "$resource_packs_uv": [ 1024, 0 ], "$resource_packs_uv_size": [ 512, 512 ] },
+      { "requires": "($resource_packs_resolution = 8192x)", "$resource_packs_uv": [ 2048, 0 ], "$resource_packs_uv_size": [ 1024, 1024 ] }
+    ]
+  },
+
+  "move_down_resource_pack_button_hover@resource_packs_java_dx.resource_packs_base": {
+    "variables": [
+      { "requires": "($resource_packs_resolution = 256x)",  "$resource_packs_uv": [ 64, 32 ],     "$resource_packs_uv_size": [ 32, 32 ] },
+      { "requires": "($resource_packs_resolution = 512x)",  "$resource_packs_uv": [ 128, 64 ],    "$resource_packs_uv_size": [ 64, 64 ] },
+      { "requires": "($resource_packs_resolution = 1024x)", "$resource_packs_uv": [ 256, 128 ],   "$resource_packs_uv_size": [ 128, 128 ] },
+      { "requires": "($resource_packs_resolution = 2048x)", "$resource_packs_uv": [ 512, 256 ],   "$resource_packs_uv_size": [ 256, 256 ] },
+      { "requires": "($resource_packs_resolution = 4096x)", "$resource_packs_uv": [ 1024, 512 ],  "$resource_packs_uv_size": [ 512, 512 ] },
+      { "requires": "($resource_packs_resolution = 8192x)", "$resource_packs_uv": [ 2048, 1024 ], "$resource_packs_uv_size": [ 1024, 1024 ] }
+    ]
+  },
+
+  /* Move Up Button */
+
+  "move_up_resource_pack_button@resource_packs_java_dx.resource_packs_base": {
+    "variables": [
+      { "requires": "($resource_packs_resolution = 256x)",  "$resource_packs_uv": [ 96, 0 ],   "$resource_packs_uv_size": [ 32, 32 ] },
+      { "requires": "($resource_packs_resolution = 512x)",  "$resource_packs_uv": [ 192, 0 ],  "$resource_packs_uv_size": [ 64, 64 ] },
+      { "requires": "($resource_packs_resolution = 1024x)", "$resource_packs_uv": [ 384, 0 ],  "$resource_packs_uv_size": [ 128, 128 ] },
+      { "requires": "($resource_packs_resolution = 2048x)", "$resource_packs_uv": [ 768, 0 ],  "$resource_packs_uv_size": [ 256, 256 ] },
+      { "requires": "($resource_packs_resolution = 4096x)", "$resource_packs_uv": [ 1536, 0 ], "$resource_packs_uv_size": [ 512, 512 ] },
+      { "requires": "($resource_packs_resolution = 8192x)", "$resource_packs_uv": [ 3072, 0 ], "$resource_packs_uv_size": [ 1024, 1024 ] }
+    ]
+  },
+
+  "move_up_resource_pack_button_hover@resource_packs_java_dx.resource_packs_base": {
+    "variables": [
+      { "requires": "($resource_packs_resolution = 256x)",  "$resource_packs_uv": [ 96, 32 ],     "$resource_packs_uv_size": [ 32, 32 ] },
+      { "requires": "($resource_packs_resolution = 512x)",  "$resource_packs_uv": [ 192, 64 ],    "$resource_packs_uv_size": [ 64, 64 ] },
+      { "requires": "($resource_packs_resolution = 1024x)", "$resource_packs_uv": [ 384, 128 ],   "$resource_packs_uv_size": [ 128, 128 ] },
+      { "requires": "($resource_packs_resolution = 2048x)", "$resource_packs_uv": [ 768, 256 ],   "$resource_packs_uv_size": [ 256, 256 ] },
+      { "requires": "($resource_packs_resolution = 4096x)", "$resource_packs_uv": [ 1536, 512 ],  "$resource_packs_uv_size": [ 512, 512 ] },
+      { "requires": "($resource_packs_resolution = 8192x)", "$resource_packs_uv": [ 3072, 1024 ], "$resource_packs_uv_size": [ 1024, 1024 ] }
+    ]
+  }
+}

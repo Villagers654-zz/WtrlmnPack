@@ -1,0 +1,172 @@
+## Main Screen
+
+options.title=Настройки...
+gui.exit=Выйти из игры
+menu.store=Minecraft Store
+menu.play=Одиночная игра
+profileScreen.header=Внешний вид
+
+## Options and other buttons
+options.video=Настройки графики...
+options.language=Язык...
+options.sounds=Музыка и звуки...
+options.accessibility=Специальные возможности...
+options.vsync=Использовать V-Sync
+options.vsync.off=Выкл
+options.vsync.on=Вкл
+options.vsync.adaptive=Адаптивный режим
+options.videoTitle=Настройки графики
+options.renderDistance=Прорисовка
+options.renderDistanceFormat=%s чанков
+options.framerateLimit=Частота кадров
+options.maxFramerate=Частота кадров
+options.framerateLimit.max=Максимум
+options.smooth_lighting=Мягкое освещение
+options.graphics.fancy=Максимум
+options.graphics.fast=Быстро
+options.guiScale.optionName=Интерфейс
+options.guiScale.auto=Авто
+options.fullscreen=Полноэкранный режим
+options.gamma=Яркость
+options.gamma.max=Ярко
+options.gamma.min=Тускло
+options.particleRenderDistance=Рендер частиц
+options.off=Выкл
+options.on=Вкл
+options.renderclouds=Облака
+options.showautosaveicon=Знак автосохранения
+options.resetSettings=Сбросить настройки
+options.thirdperson=Вид
+options.thirdperson.firstperson=От первого лица
+options.thirdperson.thirdpersonback=От третьего лица сзади
+options.thirdperson.thirdpersonfront=От третьего лица спереди
+options.fov.toggle=Динамика поля зрения
+options.uiprofile=Инвентарь
+options.uiprofile.classic=Классический
+options.uiprofile.pocket=Карманный
+options.interfaceOpacity=Прозрачность
+options.splitscreenInterfaceOpacity=Прозрачность
+options.safeZone.title=Безопасная зона экрана
+options.keyboardAndMouseSettings=Настройки мыши...
+options.hidetooltips=Скрыть подсказки
+options.hidegamepadcursor=Скрыть курсор
+options.destroyvibration=Вибрация
+options.buttonSize=Размер кнопок
+options.usetouchpad=Разделить элементы
+options.hotbarOnlyTouch=Сенсор для хотбара
+options.languageWarning=Переводы могут содержать ошибки
+options.swapJumpAndSneak=Сменить прыжок
+controls.resetAll=Сбросить настройки
+options.enableChatTextToSpeech=Текст чата в речь 
+options.enableAutoPlatformTextToSpeech=Текст настроек в речь
+options.enableUITextToSpeech=Экранный диктор
+options.enableOpenChatMessage=Уведомление чата
+options.edit=Настроить
+selectServer.select=Подключиться
+menu.returnToMenu=Отключиться
+permissions.title=Разрешения
+feedbackScreen.button=Нашли ошибку?
+pauseScreen.invite=Пригласить
+menu.game=Меню
+thirdPartyWorld.Featured=Сервера партнёры
+
+## World options
+gui.copyWorld=Создать резервную копию
+options.category.addons=Наборы данных
+offer.navigationTab.textures=Наборы ресурсов
+menu.behaviors=Выбор наборов данных
+store.search.filter.texturePacks=Наборы ресурсов
+resourcePack.title=Выбор наборов ресурсов
+resourcePack.vanilla.name=Default
+resourcePack.vanilla.description=The default look and feel of Minecraft (встроенный)
+profileScreen.manage_button_text=Редактировать
+profileScreen.manage_button_create_text=Создать
+
+## Character editor
+dr.zooming=Приблизить
+dr.header.classic_skins=Классические
+dr.header.customization=Конструктор
+
+##  Recipe Book
+gui.recipebook.search_hint=§oПоиск…
+gui.recipebook.toggleRecipes.all=Все рецепты
+gui.recipebook.toggleRecipes.blastable=Рецепты для плавильной печи
+gui.recipebook.toggleRecipes.craftable=Рецепты для верстака
+gui.recipebook.toggleRecipes.smeltable=Рецепты для печи
+gui.recipebook.toggleRecipes.smokable=Рецепты для коптильни
+
+## Creative
+inventory.binSlot=Удалить предмет
+
+##  Resource Packs
+resourcePack.available.title=§lДоступные
+resourcePack.available.title.behaviorPacks=§lДоступные
+resourcePack.selected.title=§lВыбранные
+resourcePack.selected.title.behaviorPacks=§lВыбранные
+
+## Gamerule
+selectWorld.gameRules=Игровые правила
+  
+editGamerule.title=Настройка игровых правил
+editGamerule.default=По умолчанию: 
+
+gamerule.announceAdvancements=Оповещения о достижениях
+gamerule.commandBlockOutput=Сообщения командных блоков
+gamerule.disableElytraMovementCheck=Отключение проверки на элитрах
+gamerule.disableRaids=Отключение рейдов
+gamerule.doDaylightCycle=Смена дня и ночи
+gamerule.doEntityDrops=Выпадение экипировки сущностей
+gamerule.doEntityDrops.description=Влияет на выпадение предметов с вагонеток (включая инвентарь), рамок, лодок и т.д.
+gamerule.doFireTick=Распространение огня
+gamerule.doImmediateRespawn=Мгновенное возрождение
+gamerule.doInsomnia=Появление фантомов
+gamerule.doLimitedCrafting=Создание только по рецепту
+gamerule.doLimitedCrafting.description=Если включено, то игроки могут создавать предметы только по разблокированным рецептам
+gamerule.doMobLoot=Выпадение добычи с мобов
+gamerule.doMobLoot.description=Влияет на выпадение предметов и сфер опыта с мобов
+gamerule.doMobSpawning=Появление мобов
+gamerule.doMobSpawning.description=У некоторых сущностей могут быть свои игровые правила
+gamerule.doPatrolSpawning=Патрули разбойников
+gamerule.doTileDrops=Выпадение блоков
+gamerule.doTileDrops.description=Влияет на выпадение предметов и сфер опыта с блоков
+gamerule.doTraderSpawning=Странствующие торговцы
+gamerule.doWeatherCycle=Изменения погоды
+gamerule.drowningDamage=Урон от утопления
+gamerule.fallDamage=Урон от падения
+gamerule.fireDamage=Урон от огня
+gamerule.forgiveDeadPlayers=Прощение умерших игроков
+gamerule.forgiveDeadPlayers.description=Разозлённые нейтральные существа перестают злиться, когда игрок, бывший их целью, умирает неподалёку.
+gamerule.keepInventory=Сохранение инвентаря при смерти
+gamerule.logAdminCommands=Запись команд администраторов
+gamerule.maxCommandChainLength=Ограничение длины цепи команд
+gamerule.maxCommandChainLength.description=Затрагивает цепи командных блоков и функции
+gamerule.maxEntityCramming=Предел сущностей в одном блоке
+gamerule.mobGriefing=Разрушительные действия мобов
+gamerule.naturalRegeneration=Регенерация здоровья
+gamerule.randomTickSpeed=Частота случайных тактов
+gamerule.reducedDebugInfo=Малый экран отладки
+gamerule.reducedDebugInfo.description=Ограничение содержания экрана отладки
+gamerule.sendCommandFeedback=Отображение сообщений команд
+gamerule.showDeathMessages=Сообщения о смерти
+gamerule.spawnRadius=Радиус области возрождения
+gamerule.spectatorsGenerateChunks=Генерация мира наблюдателями
+
+gamerule.category.chat=§lЧат
+gamerule.category.spawning=§lПоявление
+gamerule.category.updates=§lОбновления мира
+gamerule.category.drops=§lВыпадение ресурсов
+gamerule.category.mobs=§lМобы
+gamerule.category.player=§lИгрок
+gamerule.category.misc=§lРазное
+
+options.difficulty=Сложность
+
+##  Raid Texts Input
+raid.name=Raid	#
+raid.progress=Mobs remaining:	#
+
+##  Raid Texts Output
+bar.event.raid.name=Налет	#
+bar.event.raid.remaining.2=Налет - Осталось мобов: 2	#
+bar.event.raid.remaining.1=Налет - Осталось мобов: 1	#
+bar.event.raid.remaining.0=Налет - Осталось мобов: 0	#

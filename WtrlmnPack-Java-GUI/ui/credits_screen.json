@@ -1,0 +1,6 @@
+{
+  "credits_screen": {
+    "$screen_content": "credits_dx.center_screen",
+    "$screen_bg_content": "credits_dx.full_screen"
+  }
+}

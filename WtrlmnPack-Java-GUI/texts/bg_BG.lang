@@ -1,0 +1,100 @@
+﻿##  Video Settings
+options.graphics.fancy.tooltip=Красивите графики балансират качеството на играта и представянето ѝ за повечето машини. Дъждът, облаците и партикълите може да не се виждат зад вода или полупрозрачни блокчета.	#
+options.graphics.fast.tooltip=Бързите графики намаляват количеството на видимостта на дъжд и сняг. Прозрачността на някои блокчета ще бъде премахната, като например листата на дърветата.	#
+
+options.fov.toggle=Динамичен FOV	#
+
+options.vsync=Отвесно синхрониз
+options.vsync.off=Изкл.	#
+options.vsync.on=Вкл.	#
+options.vsync.adaptive=Адаптивна.	#
+
+options.renderClouds=Облаци	#
+
+##  Packs
+pack.available.title=§lНа разположение	#
+pack.selected.title=§lИзбрано	#
+
+resourcePack.title=Избор на ресурсни пакети	#
+dataPack.title=Избери пакети с данни	#
+
+selectWorld.resourcePack=Pесурсни	#
+selectWorld.dataPacks=Данни	#
+
+pack.resources.dropInfo=Плъзнете и пуснете файловете в директория с папки "resource_packs", за да добавите пакети	#
+pack.data.dropInfo=Плъзнете и пуснете файловете в директория с папки "behavior_packs", за да добавите пакети	#
+
+##  Recipe Book
+gui.recipebook.search_hint=Търсене...	#
+gui.recipebook.toggleRecipes.all=Показва се всичко	#
+gui.recipebook.toggleRecipes.blastable=Показват се претопяеми предмети	#
+gui.recipebook.toggleRecipes.craftable=Показват се само изработваеми предмети	#
+gui.recipebook.toggleRecipes.smeltable=Показват се претопяеми предмети	#
+gui.recipebook.toggleRecipes.smokable=Показват се опушваеми предмети	#
+
+## Creative
+inventory.binSlot=Унищожаване на предмет	#
+
+##  Trade v2
+merchant.deprecated=Селяните възстановяват ресурсите до два пъти дневно.	#
+
+##  Worlds
+selectWorld.tooltip.beta=Не забравяйте да направите резервно копие на този свят преди да го заредите на тази версия.	#
+
+##  Realms
+mco.selectServer.popup=Realms е безопасен, прост начин да се насладите на онлайн Minecraft свят с до 10 приятели наведнъж. Поддържа много мини игри и доста готови светове! Само собственикът на Realm-а трябва да плаща.	#
+
+##  Toggle OFF/ON
+options.off=Изкл.	#
+options.on=Вкл.	#
+
+##  Realms Invites
+mco.invites.title=Чакащи покани	#
+mco.invites.pending=Нови покани!	#
+mco.invites.nopending=Няма чакащи покани!	#
+mco.invites.button.accept=Приемане	#
+mco.invites.button.reject=Отказ	#
+
+## Profile Screen
+profile.user=Потребител	#
+profile.connected=Cвързан	#
+
+## Gamerule
+selectWorld.gameRules=Правила на Играта	#
+  
+editGamerule.title=Редактиране на правилатана играта	#
+editGamerule.default=По подразбиране: 	#
+
+gamerule.doImmediateRespawn=Незабавно съживяване	#
+gamerule.keepInventory=Запазване на инвентара след смърт	#
+gamerule.naturalRegeneration=Регенерирай кръвта	#
+gamerule.spawnRadius=Радиус на място за съживяване	#
+gamerule.doMobSpawning=Създаване на мобове	#
+gamerule.doMobSpawning.description=Някои субекти може да имат отделни правила	#
+gamerule.doEntityDrops=Пуснете оборудването на образуванието 	#
+gamerule.doEntityDrops.description=Управлява капки от минерални колички (включително инвентаризации), рамки за артикули, лодки и др. 	#
+gamerule.doMobLoot=Пуснете плячката на мафията	#
+gamerule.doMobLoot.description=Контролира дроповете на мобовете, включително и сферите с опит	#
+gamerule.doTileDrops=Пусни блокове	#
+gamerule.doTileDrops.description=Контролира дроповете от блокчета, включително и сферите с опит	#
+gamerule.doDaylightCycle=Предварително време за игра	#
+gamerule.doFireTick=Актуализиране на огън	#
+gamerule.doWeatherCycle=Актуализирай времето	#
+gamerule.randomTickSpeed=Случечайна tick скорост	#
+
+gamerule.category.player=§lИграч 	#
+gamerule.category.mobs=§lСъздания 	#
+gamerule.category.spawning=§lСъживяване 	#
+gamerule.category.drops=§lПуснати предмети 	#
+gamerule.category.updates=§lАктуализации на света 	#
+gamerule.category.misc=§lРазни 	#
+
+##  Raid Texts Input
+raid.name=Raid	#
+raid.progress=Mobs remaining:	#
+
+##  Raid Texts Output
+bar.event.raid.name=Нашествие	#
+bar.event.raid.remaining.2=Нашествие - Оставащи мобове: 2	#
+bar.event.raid.remaining.1=Нашествие - Оставащи мобове: 1	#
+bar.event.raid.remaining.0=Нашествие - Оставащи мобове: 0	#

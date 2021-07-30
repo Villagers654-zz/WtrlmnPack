@@ -1,0 +1,176 @@
+/*File made by @CrisXolt. 
+//(c) Don't use any code design without permission!*/
+{
+  "namespace": "play_dx",
+
+  /*////// TAB BUTTONS //////*/
+
+  "button_tab@common_toggles_dx.main_button_toggle": {
+    "layer": 100,
+
+    "size": [ 20, 20 ],
+    "$toggle_name": "navigation_tab"
+  },
+
+  "worlds_navigation_tab@play_dx.button_tab": {
+    "$unchecked_control": "java_gui_common.world_default",
+    "$unchecked_hover_control": "java_gui_common.world_hover",
+    "$checked_control": "java_gui_common.world_hover",
+    "$checked_hover_control": "java_gui_common.world_hover",
+    "$tab_view_binding_name": "world_navigation_tab_toggle",
+    "$toggle_group_forced_index": 0
+  },
+
+  "friends_navigation_tab@play_dx.button_tab": {
+    "$unchecked_control": "java_gui_common.realms_default",
+    "$unchecked_hover_control": "java_gui_common.realms_hover",
+    "$checked_control": "java_gui_common.realms_hover",
+    "$checked_hover_control": "java_gui_common.realms_hover",
+    "$tab_view_binding_name": "friends_navigation_tab_toggle",
+    "$toggle_group_forced_index": 1
+  },
+
+  "server_navigation_tab@play_dx.button_tab": {
+    "$unchecked_control": "java_gui_common.server_default",
+    "$unchecked_hover_control": "java_gui_common.server_hover",
+    "$checked_control": "java_gui_common.server_hover",
+    "$checked_hover_control": "java_gui_common.server_hover",
+    "$tab_view_binding_name": "server_navigation_tab_toggle",
+    "$toggle_group_forced_index": 2
+  },
+
+  /*////// BUTTONS AND OBJECTS //////*/
+  
+  "scroll_stack_panel_base": {
+    "type": "stack_panel",
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "orientation": "vertical",
+    "size": [ 270, "100%c" ]
+  },
+
+  "base_label": {
+    "size": [ "default", 10 ],
+    "type": "label",
+    "shadow": true,
+    "color": "$main_menu_button_default_color"
+  },
+
+  "cancel_button@common_buttons_dx.main_button_150": {
+    "size": [ 150, 20 ],
+    "$pressed_button_name": "button.menu_exit",
+    "$button_text": "gui.cancel"
+  },
+
+  /*////// SCREEN //////*/
+
+  "button_tabs": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ "100%", 20 ],
+    "controls": [
+      {
+        "padding_0": {
+          "type": "panel",
+          "size": [ 17, 20 ]
+        }
+      },
+      { "worlds_navigation_tab@play_dx.worlds_navigation_tab": { } },
+      {
+        "padding_0": {
+          "type": "panel",
+          "size": [ 4, 20 ]
+        }
+      },
+      { "realms_navigation_tab@play_dx.friends_navigation_tab": { } },
+      {
+        "padding_1": {
+          "type": "panel",
+          "size": [ 4, 20 ]
+        }
+      },
+      { "multiplayer_navigation_tab@play_dx.server_navigation_tab": { } },
+      {
+        "padding_1": {
+          "type": "panel",
+          "size": [ "fill", 20 ]
+        }
+      }
+    ]
+  },
+  
+  "play_screen_content": {
+    "type": "panel",
+    "$middle_clips_children": false,
+    "controls": [
+      {
+        "button_tabs@common_screens_dx.horizontal_safezone_screen": {
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "offset": [ 0, 6 ],
+          "size": [ "100%", 20 ],
+          "$panel_content": "play_dx.button_tabs"
+        }
+      },
+      {
+        "select_world_screen_panel@select_wolrd_dx.select_world_screen_panel": {
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "world_navigation_tab_toggle",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "play_multiplayer_screen_panel@play_multiplayer_dx.play_multiplayer_screen_panel": {
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "server_navigation_tab_toggle",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "play_realms_screen_panel@play_realms_dx.play_realms_screen_panel": {
+          "ignored": "$pre_release",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "friends_navigation_tab_toggle",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "what_is_realms_popup_panel@play_realms_dx.what_is_realms_popup_panel": {
+          "ignored": "$pre_release",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "what_is_realms_popup_toggle",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "popup_dialog_factory": {
+          "type": "factory",
+          "control_ids": {
+            "join_by_code": "@play.popup_dialog_join_by_code",
+            "high_ping_warning": "@play.popup_dialog_high_ping"
+          }
+        }
+      }
+    ]
+  }
+}

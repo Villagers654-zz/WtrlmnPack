@@ -1,0 +1,99 @@
+/*File made by @CrisXolt.
+//(c) Don't use any code design without permission!*/
+{
+  "namespace": "sign_dx",
+
+  /* Sign screen!! */
+
+  "sign_edit_label": {
+    "type": "label",
+    "shadow": true,
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "offset": [ 0, "10%" ],
+    "color": "$sign_edit_text_color",
+    "text": "sign.edit"
+  },
+
+  "classic_done_button@common_buttons_dx.main_button_200": {
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "layer": 4,
+    "offset": [ 0, -48 ],
+    "$button_text": "gui.done",
+    "$pressed_button_name": "button.menu_exit"
+  },
+
+  "sign_bg@sign.sign_background": {
+    "size": [ 94, 46 ],
+    "offset": [ 0, 0 ] /* 12 */
+  },
+
+  "sign_text_multiline@sign.sign_text_multiline": {
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "size": [ 93, 46 ],
+    "offset": [ 0, "25%" ],
+    "$font_size": "normal",
+    "$text_background_default": "sign_dx.sign_bg",
+    "$text_background_hover": "sign_dx.sign_bg",
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_cancel",
+        "to_button_id": "button.menu_exit",
+        "handle_select": false,
+        "handle_deselect": true,
+        "mapping_type": "global"
+      }
+    ]
+  },
+
+  "sign_screen_content": {
+    "type": "panel",
+    "controls": [
+      { "sign_edit_label@sign_dx.sign_edit_label": {} },
+      { "text_edit@sign_dx.sign_text_multiline": {} },
+      { "classic_done_button@sign_dx.classic_done_button": {} }
+    ]
+  },
+
+  /*//// Screen ////*/
+
+  "center_screen": {
+    "type": "panel",
+    "controls": [
+      {
+        "invisible_exit_background": {
+          "type": "input_panel",
+          "layer": 1,
+          "size": [ "100%", "100%" ],
+          "focus_enabled": true,
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "bindings": [
+            {
+              "binding_name": "#close_button_visible",
+              "binding_name_override": "#visible"
+            }
+          ],
+          "button_mappings": [
+            {
+              "from_button_id": "button.menu_select",
+              "to_button_id": "button.menu_exit",
+              "mapping_type": "pressed"
+            }
+          ]
+        }
+      },
+      { "screen_background@java_gui_common.screen_background": { "layer": -10, "ignored": "(not $is_holographic)" } }
+    ]
+  },
+
+  "full_screen": {
+    "type": "panel",
+    "controls": [
+      { "sign_screen_content@sign_dx.sign_screen_content": { } },
+      { "screen_background@java_gui_common.screen_background": { "layer": -10, "ignored": "$is_holographic" } }
+    ]
+  }
+}

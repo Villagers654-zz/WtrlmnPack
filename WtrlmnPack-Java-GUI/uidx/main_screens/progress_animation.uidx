@@ -1,0 +1,216 @@
+/*File made by @CrisXolt.
+//(c) Don't use any code design without permission!*/
+{
+  "namespace": "progress_anim_dx",
+
+  /*//// World Loading Animation ////*/
+
+  /* Loading Percentage */
+
+  "loading_percentage_bindings": {
+    "size": [ "100%", "100%" ],
+    "$total_amount": "#loading_bar_total_amount",
+    "$current_amount":"#loading_bar_current_amount",
+    "bindings": [
+      {
+        "binding_name": "$total_amount"
+      },
+      {
+        "binding_name": "$current_amount"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "((($current_amount / $total_amount) > $min_amount) and (($current_amount / $total_amount) < $max_amount) or (($current_amount / $total_amount) = $min_amount))",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+
+  "percentage_label_template@progress_anim_dx.loading_percentage_bindings": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ "100%cm", 10 ],
+    "$number_text|default": "",
+    "controls": [
+      {
+        "number_label": {
+          "type": "label",
+          "text": "$number_text",
+          "shadow": true,
+          "size": [ "default", 10 ]
+        }
+      },
+      {
+        "percentage_label": {
+          "type": "label",
+          "text": "vdx.loading.percentage",
+          "shadow": true,
+          "size": [ "default", 10 ]
+        }
+      }
+    ]
+  },
+
+  "loading_percentage_label": {
+    "type": "panel",
+    "size": [ "100%", 10 ],
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "offset": [ 0, 85 ],
+    "controls": [
+      { "000@progress_anim_dx.percentage_label_template": { "$number_text": "0",   "$min_amount": 0.00, "$max_amount": 0.01 } },
+      { "001@progress_anim_dx.percentage_label_template": { "$number_text": "1",   "$min_amount": 0.01, "$max_amount": 0.02 } },
+      { "002@progress_anim_dx.percentage_label_template": { "$number_text": "2",   "$min_amount": 0.02, "$max_amount": 0.05 } },
+      { "005@progress_anim_dx.percentage_label_template": { "$number_text": "5",   "$min_amount": 0.05, "$max_amount": 0.10 } },
+      { "010@progress_anim_dx.percentage_label_template": { "$number_text": "10",  "$min_amount": 0.10, "$max_amount": 0.15 } },
+      { "015@progress_anim_dx.percentage_label_template": { "$number_text": "15",  "$min_amount": 0.15, "$max_amount": 0.20 } },
+      { "020@progress_anim_dx.percentage_label_template": { "$number_text": "20",  "$min_amount": 0.20, "$max_amount": 0.25 } },
+      { "025@progress_anim_dx.percentage_label_template": { "$number_text": "25",  "$min_amount": 0.25, "$max_amount": 0.30 } },
+      { "030@progress_anim_dx.percentage_label_template": { "$number_text": "30",  "$min_amount": 0.30, "$max_amount": 0.50 } },
+      { "050@progress_anim_dx.percentage_label_template": { "$number_text": "50",  "$min_amount": 0.50, "$max_amount": 0.70 } },
+      { "070@progress_anim_dx.percentage_label_template": { "$number_text": "70",  "$min_amount": 0.70, "$max_amount": 0.80 } },
+      { "080@progress_anim_dx.percentage_label_template": { "$number_text": "80",  "$min_amount": 0.80, "$max_amount": 0.90 } },
+      { "090@progress_anim_dx.percentage_label_template": { "$number_text": "90",  "$min_amount": 0.90, "$max_amount": 1.00 } },
+      { "100@progress_anim_dx.percentage_label_template": { "$number_text": "100", "$min_amount": 1.00, "$max_amount": 1.00 } }
+    ]
+  },
+
+  "percentage_image_template@progress_anim_dx.loading_percentage_bindings": {
+    "type": "image",
+    "texture": "('textures/uidx/world_loading_percentage/' + $image_number)",
+    "size": [ 90, 90 ]
+  },
+
+  "loading_percentage_image": {
+    "type": "panel",
+    "size": [ 90, 90 ],
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "controls": [
+      { "000@progress_anim_dx.percentage_image_template": { "$image_number": "000", "$min_amount": 0.0000, "$max_amount": 0.0286 } },
+      { "001@progress_anim_dx.percentage_image_template": { "$image_number": "002", "$min_amount": 0.0286, "$max_amount": 0.0571 } },
+      { "002@progress_anim_dx.percentage_image_template": { "$image_number": "004", "$min_amount": 0.0571, "$max_amount": 0.0857 } },
+      { "003@progress_anim_dx.percentage_image_template": { "$image_number": "006", "$min_amount": 0.0857, "$max_amount": 0.1143 } },
+      { "004@progress_anim_dx.percentage_image_template": { "$image_number": "008", "$min_amount": 0.1143, "$max_amount": 0.1429 } },
+      { "005@progress_anim_dx.percentage_image_template": { "$image_number": "010", "$min_amount": 0.1429, "$max_amount": 0.1714 } },
+      { "006@progress_anim_dx.percentage_image_template": { "$image_number": "012", "$min_amount": 0.1714, "$max_amount": 0.2000 } },
+      { "007@progress_anim_dx.percentage_image_template": { "$image_number": "014", "$min_amount": 0.2000, "$max_amount": 0.2286 } },
+      { "008@progress_anim_dx.percentage_image_template": { "$image_number": "016", "$min_amount": 0.2286, "$max_amount": 0.2571 } },
+      { "009@progress_anim_dx.percentage_image_template": { "$image_number": "018", "$min_amount": 0.2571, "$max_amount": 0.2857 } },
+      { "010@progress_anim_dx.percentage_image_template": { "$image_number": "020", "$min_amount": 0.2857, "$max_amount": 0.3143 } },
+      { "011@progress_anim_dx.percentage_image_template": { "$image_number": "022", "$min_amount": 0.3143, "$max_amount": 0.3429 } },
+      { "012@progress_anim_dx.percentage_image_template": { "$image_number": "024", "$min_amount": 0.3429, "$max_amount": 0.3714 } },
+      { "013@progress_anim_dx.percentage_image_template": { "$image_number": "026", "$min_amount": 0.3714, "$max_amount": 0.4000 } },
+      { "014@progress_anim_dx.percentage_image_template": { "$image_number": "028", "$min_amount": 0.4000, "$max_amount": 0.4286 } },
+      { "015@progress_anim_dx.percentage_image_template": { "$image_number": "030", "$min_amount": 0.4286, "$max_amount": 0.4571 } },
+      { "016@progress_anim_dx.percentage_image_template": { "$image_number": "032", "$min_amount": 0.4571, "$max_amount": 0.4857 } },
+      { "017@progress_anim_dx.percentage_image_template": { "$image_number": "034", "$min_amount": 0.4857, "$max_amount": 0.5143 } },
+      { "018@progress_anim_dx.percentage_image_template": { "$image_number": "036", "$min_amount": 0.5143, "$max_amount": 0.5428 } },
+      { "019@progress_anim_dx.percentage_image_template": { "$image_number": "038", "$min_amount": 0.5428, "$max_amount": 0.5714 } },
+      { "020@progress_anim_dx.percentage_image_template": { "$image_number": "040", "$min_amount": 0.5714, "$max_amount": 0.6000 } },
+      { "021@progress_anim_dx.percentage_image_template": { "$image_number": "042", "$min_amount": 0.6000, "$max_amount": 0.6286 } },
+      { "022@progress_anim_dx.percentage_image_template": { "$image_number": "044", "$min_amount": 0.6286, "$max_amount": 0.6571 } },
+      { "023@progress_anim_dx.percentage_image_template": { "$image_number": "046", "$min_amount": 0.6571, "$max_amount": 0.6857 } },
+      { "024@progress_anim_dx.percentage_image_template": { "$image_number": "048", "$min_amount": 0.6857, "$max_amount": 0.7143 } },
+      { "025@progress_anim_dx.percentage_image_template": { "$image_number": "050", "$min_amount": 0.7143, "$max_amount": 0.7428 } },
+      { "026@progress_anim_dx.percentage_image_template": { "$image_number": "052", "$min_amount": 0.7428, "$max_amount": 0.7714 } },
+      { "027@progress_anim_dx.percentage_image_template": { "$image_number": "054", "$min_amount": 0.7714, "$max_amount": 0.8000 } },
+      { "028@progress_anim_dx.percentage_image_template": { "$image_number": "056", "$min_amount": 0.8000, "$max_amount": 0.8286 } },
+      { "029@progress_anim_dx.percentage_image_template": { "$image_number": "058", "$min_amount": 0.8286, "$max_amount": 0.8571 } },
+      { "030@progress_anim_dx.percentage_image_template": { "$image_number": "060", "$min_amount": 0.8571, "$max_amount": 0.8857 } },
+      { "031@progress_anim_dx.percentage_image_template": { "$image_number": "062", "$min_amount": 0.8857, "$max_amount": 0.9143 } },
+      { "032@progress_anim_dx.percentage_image_template": { "$image_number": "064", "$min_amount": 0.9143, "$max_amount": 0.9428 } },
+      { "033@progress_anim_dx.percentage_image_template": { "$image_number": "066", "$min_amount": 0.9428, "$max_amount": 0.9714 } },
+      { "034@progress_anim_dx.percentage_image_template": { "$image_number": "068", "$min_amount": 0.9714, "$max_amount": 1.0000 } },
+      { "035@progress_anim_dx.percentage_image_template": { "$image_number": "070", "$min_amount": 1.0000, "$max_amount": 1.0000 } }
+    ]
+  },
+
+  /*//// Server/Realms Loading  Animation ////*/
+
+  "server_loading_bar": {
+    "type": "stack_panel",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "size": [ 140, "100%c" ],
+    "$duration_per_frame": 0.06,
+    "offset": "@progress_anim_dx.server_flipbook_01",
+    "controls": [
+      { "01@progress_anim_dx.server_loading_label": { "$left_text": "_ _ _ _ _ ", "$loading_text": "▃ ▄ ▅ ▆ ▇ █" } },
+      { "02@progress_anim_dx.server_loading_label": { "$left_text": "_ _ _ _ ", "$loading_text": "▃ ▄ ▅ ▆ ▇ █ ▇" } },
+      { "03@progress_anim_dx.server_loading_label": { "$left_text": "_ _ _ ", "$loading_text": "▃ ▄ ▅ ▆ ▇ █ ▇ ▆" } },
+      { "04@progress_anim_dx.server_loading_label": { "$left_text": "_ _ ", "$loading_text": "▃ ▄ ▅ ▆ ▇ █ ▇ ▆ ▅" } },
+      { "05@progress_anim_dx.server_loading_label": { "$left_text": "_ ", "$loading_text": "▃ ▄ ▅ ▆ ▇ █ ▇ ▆ ▅ ▄" } },
+      { "06@progress_anim_dx.server_loading_label": { "$loading_text": "▃ ▄ ▅ ▆ ▇ █ ▇ ▆ ▅ ▄ ▃" } },
+      { "07@progress_anim_dx.server_loading_label": { "$right_text": " _", "$loading_text": "▄ ▅ ▆ ▇ █ ▇ ▆ ▅ ▄ ▃" } },
+      { "08@progress_anim_dx.server_loading_label": { "$right_text": " _ _", "$loading_text": "▅ ▆ ▇ █ ▇ ▆ ▅ ▄ ▃" } },
+      { "09@progress_anim_dx.server_loading_label": { "$right_text": " _ _ _", "$loading_text": "▆ ▇ █ ▇ ▆ ▅ ▄ ▃" } },
+      { "10@progress_anim_dx.server_loading_label": { "$right_text": " _ _ _ _", "$loading_text": "▇ █ ▇ ▆ ▅ ▄ ▃" } },
+      { "11@progress_anim_dx.server_loading_label": { "$right_text": " _ _ _ _ _", "$loading_text": "█ ▇ ▆ ▅ ▄ ▃" } }
+    ]
+  },
+
+  "loading_label": {
+    "type": "label",
+    "shadow": true,
+    "text": "$loading_text",
+    "size": [ "default", 10 ],
+    "color": [ 0.5, 0.5, 0.5 ],
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "text_alignment": "center"
+  },
+
+  "server_loading_label": {
+    "type": "panel",
+    "size": [ 140, 10 ],
+    "controls": [
+      {
+        "stack_panel_control": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": [ "100%c", 10 ],
+          "anchor_from": "bottom_middle",
+          "anchor_to": "bottom_middle",
+          "$left_text|default": "",
+          "$right_text|default": "",
+          "$loading_text|default": "",
+          "controls": [
+            { "left_label@progress_anim_dx.loading_label": { "text": "$left_text" } },
+            { "middle_label@progress_anim_dx.loading_label": { "text": "$loading_text" } },
+            { "right_label@progress_anim_dx.loading_label": { "text": "$right_text" } }
+          ]
+        }
+      }
+    ]
+  },
+  
+  "flipbook_base": {
+    "anim_type": "offset",
+    "easing": "linear",
+    "duration": "$duration_per_frame",
+    "from": "$anim_offset",
+    "to": "$anim_offset"
+  },
+  
+  "server_flipbook_01@progress_anim_dx.flipbook_base": { "$anim_offset": [ 0, 0    ], "next": "@progress_anim_dx.server_flipbook_02" },
+  "server_flipbook_02@progress_anim_dx.flipbook_base": { "$anim_offset": [ 0, -10  ], "next": "@progress_anim_dx.server_flipbook_03" },
+  "server_flipbook_03@progress_anim_dx.flipbook_base": { "$anim_offset": [ 0, -20  ], "next": "@progress_anim_dx.server_flipbook_04" },
+  "server_flipbook_04@progress_anim_dx.flipbook_base": { "$anim_offset": [ 0, -30  ], "next": "@progress_anim_dx.server_flipbook_05" },
+  "server_flipbook_05@progress_anim_dx.flipbook_base": { "$anim_offset": [ 0, -40  ], "next": "@progress_anim_dx.server_flipbook_06" },
+  "server_flipbook_06@progress_anim_dx.flipbook_base": { "$anim_offset": [ 0, -50  ], "next": "@progress_anim_dx.server_flipbook_07" },
+  "server_flipbook_07@progress_anim_dx.flipbook_base": { "$anim_offset": [ 0, -60  ], "next": "@progress_anim_dx.server_flipbook_08" },
+  "server_flipbook_08@progress_anim_dx.flipbook_base": { "$anim_offset": [ 0, -70  ], "next": "@progress_anim_dx.server_flipbook_09" },
+  "server_flipbook_09@progress_anim_dx.flipbook_base": { "$anim_offset": [ 0, -80  ], "next": "@progress_anim_dx.server_flipbook_10" },
+  "server_flipbook_10@progress_anim_dx.flipbook_base": { "$anim_offset": [ 0, -90  ], "next": "@progress_anim_dx.server_flipbook_11" },
+  "server_flipbook_11@progress_anim_dx.flipbook_base": { "$anim_offset": [ 0, -100 ], "next": "@progress_anim_dx.server_flipbook_12" },
+  "server_flipbook_12@progress_anim_dx.flipbook_base": { "$anim_offset": [ 0, -90  ], "next": "@progress_anim_dx.server_flipbook_13" },
+  "server_flipbook_13@progress_anim_dx.flipbook_base": { "$anim_offset": [ 0, -80  ], "next": "@progress_anim_dx.server_flipbook_14" },
+  "server_flipbook_14@progress_anim_dx.flipbook_base": { "$anim_offset": [ 0, -70  ], "next": "@progress_anim_dx.server_flipbook_15" },
+  "server_flipbook_15@progress_anim_dx.flipbook_base": { "$anim_offset": [ 0, -60  ], "next": "@progress_anim_dx.server_flipbook_16" },
+  "server_flipbook_16@progress_anim_dx.flipbook_base": { "$anim_offset": [ 0, -50  ], "next": "@progress_anim_dx.server_flipbook_17" },
+  "server_flipbook_17@progress_anim_dx.flipbook_base": { "$anim_offset": [ 0, -40  ], "next": "@progress_anim_dx.server_flipbook_18" },
+  "server_flipbook_18@progress_anim_dx.flipbook_base": { "$anim_offset": [ 0, -30  ], "next": "@progress_anim_dx.server_flipbook_19" },
+  "server_flipbook_19@progress_anim_dx.flipbook_base": { "$anim_offset": [ 0, -20  ], "next": "@progress_anim_dx.server_flipbook_20" },
+  "server_flipbook_20@progress_anim_dx.flipbook_base": { "$anim_offset": [ 0, -10  ], "next": "@progress_anim_dx.server_flipbook_01" }
+}

@@ -1,0 +1,135 @@
+﻿##  Start
+menu.play=遊戲
+menu.options=選項...
+menu.quit=離開遊戲
+menu.store=市集
+
+##  Accessibility Settings
+options.enableChatTextToSpeech=為聊天啟用文字轉換語音
+options.enableAutoPlatformTextToSpeech=使用裝置設定啟用文字轉換語音
+options.enableUITextToSpeech=啟用 UI 螢幕閱讀器
+options.enableOpenChatMessage=啟用開啟聊天視窗訊息
+
+##  Video Settings
+options.graphics.fancy.tooltip=  精緻  - 高畫質，較慢 改變雲、樹葉、水、陰影與草地側面的外觀。
+options.graphics.fast.tooltip=  流暢  - 低畫質，較流暢 改變雲、樹葉、水、陰影與草地側面的外觀。
+
+options.vsync=使用 VSync
+options.vsync.off=沒有垂直同步
+options.vsync.on=垂直同步
+options.vsync.adaptive=調適性垂直同步
+
+options.renderClouds=雲
+
+options.maxFramerate=最大 FPS
+
+options.fov.toggle=視角廣度
+
+options.thirdperson=攝影機視角
+options.thirdperson.firstperson=第一人
+options.thirdperson.thirdpersonback=第三方背面
+options.thirdperson.thirdpersonfront=第三方正面
+
+##  Packs
+pack.available.title=§l可用  
+pack.selected.title=§l已選擇 
+
+resourcePack.title=選擇資源包
+dataPack.title=選擇資料包
+
+selectWorld.resourcePack=資源包
+selectWorld.dataPack=資料包
+
+pack.resources.dropInfo=請將資源包置於"resource_packs"資料夾 來載入資源包
+pack.data.dropInfo=請將資料包置於"behavior_packs"資料夾 來載入資料包
+
+##  Recipe Book
+gui.recipebook.search_hint=§o搜尋... 
+gui.recipebook.toggleRecipes.all=已列出所有項目  
+gui.recipebook.toggleRecipes.craftable=已列出可合成項目  
+gui.recipebook.toggleRecipes.smeltable=已列出可熔煉項目  
+gui.recipebook.toggleRecipes.blastable=已列出高爐可熔煉項目  
+gui.recipebook.toggleRecipes.smokable=已列出可燻製項目   
+
+## Creative
+inventory.binSlot=銷毀物品   
+
+##  Trade v2
+merchant.deprecated=村民每天最多補貨兩次。 
+
+##  Worlds
+selectWorld.tooltip.beta=以測試版本載入之前別忘了先備份這個世界。
+
+##  Realms
+mco.selectServer.popup=Realms是一種安全，簡單的方式，一次最多可與10個朋友一起享受Minecraft的在線世界。它支持大量的小遊戲和大量的自定義世界！只有Realms的所有者需要付款。 
+
+##  Toggle OFF/ON
+options.off=關閉 
+options.on=開啟  
+
+##  Realms
+mco.invites.title=等待邀請 
+mco.invites.pending=新邀請!
+mco.invites.nopending=沒有待處理的邀請！
+mco.invites.button.accept=接受 
+mco.invites.button.reject=拒絕 
+
+## Profile Screen
+profile.user=使用者
+profile.connected=已連線 
+
+## Gamerule
+selectWorld.gameRules=遊戲規則 
+  
+editGamerule.title=編輯遊戲規則
+editGamerule.default=預設值: 
+
+gamerule.doImmediateRespawn=立即重生 
+gamerule.keepInventory=死亡後保留物品欄
+gamerule.naturalRegeneration=自然回血
+gamerule.spawnRadius=重生點半徑
+gamerule.doMobSpawning=生成生物
+gamerule.doMobSpawning.description=部分實體可能採用不同的規則
+gamerule.doEntityDrops=掉落實體裝備
+gamerule.doEntityDrops.description=控制自礦車（包括物品欄）、物品展示框、船等的掉落物
+gamerule.doMobLoot=掉落生物戰利品
+gamerule.doMobLoot.description=控制生物資源掉落， 包含經驗球 
+gamerule.doTileDrops=掉落方塊
+gamerule.doTileDrops.description=控制方塊資源掉落， 包含經驗球 
+gamerule.doDaylightCycle=日夜交替
+gamerule.doFireTick=更新火焰 
+gamerule.doWeatherCycle=更新天氣 
+gamerule.randomTickSpeed=隨機刻速率
+gamerule.mobGriefing=允許生物的破壞行為
+gamerule.category.player=§l玩家
+gamerule.category.mobs=§l生物
+gamerule.category.spawning=§l生成
+gamerule.category.drops=§l掉落 
+gamerule.category.updates=§l世界更新 
+gamerule.category.misc=§l雜項
+
+##  Raid Texts Input (Don't change unless you know what you are doing)
+raid.name=Raid	#
+raid.progress=Mobs remaining:	#
+
+##  Raid Texts Output
+bar.event.raid.name=突襲
+bar.event.raid.remaining.2=突襲 - 剩餘敵人: 2
+bar.event.raid.remaining.1=突襲 - 剩餘敵人: 1
+bar.event.raid.remaining.0=突襲 - 剩餘敵人: 0
+
+##  Audio Settings
+
+soundCategory.ambient=環境音效／環境 
+soundCategory.block=方塊 
+soundCategory.hostile=敵對生物 
+soundCategory.master=主音量
+soundCategory.music=音樂 
+soundCategory.neutral=友好生物 
+soundCategory.player=玩家
+soundCategory.record=唱片機/音階盒 
+soundCategory.weather=雨聲 
+
+multiplayerWarning.header=§l警告： 第三方遊戲伺服器
+multiplayerWarning.message=警告：第三方伺服器所提供的遊戲不隸屬於 Mojang Studios 或 Microsoft，不會受到我們的管理或監督。線上遊玩時，您可能會遭遇到未受管理的聊天訊息、或是其他由使用者製造的內容，而這些內容可能不適合所有人。
+multiplayerWarning.check=不再顯示此畫面

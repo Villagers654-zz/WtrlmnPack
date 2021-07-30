@@ -1,0 +1,22 @@
+{
+  "blast_furnace_screen": {
+    "$furnace_dialog_bg": "blast_furnace_java_dx.dialog_bg_blast_furnace",
+    "$arrow_texture": "blast_furnace_java_dx.arrow_full",
+    "$flame_texture": "blast_furnace_java_dx.flame_full",
+    "variables": [
+      {
+        "requires": "$desktop_screen",
+        "$is_blast_furnace": true,
+        "$recipe_book_content": "blast_furnace_recipe_book_dx.recipe_book_panel",
+        "$screen_content": "furnace_dx.center_screen",
+        "$screen_bg_content": "furnace_dx.full_screen",
+        "$gamepad_cursor": true
+      },
+      {
+        "requires": "$pocket_screen",
+        "$screen_content": "furnace_pocket.furnace_panel",
+        "$gamepad_cursor": false
+      }
+    ]
+  }
+}

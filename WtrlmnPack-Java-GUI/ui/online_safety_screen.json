@@ -1,0 +1,8 @@
+/*File modified by @CrisXolt.
+//(c) Don't use any code design without permission!*/
+{
+  "online_safety_screen": {
+    "$screen_content": "online_safety_dx.online_safety_screen_content",
+    "$screen_bg_content": "java_gui_common.options_background"
+  }
+}
