@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "§dWtrlmn Pack §71.17",
+    "min_engine_version": [
+      1,
+      16,
+      20
+    ],
+    "name": "WtrlmnPack",
+    "uuid": "c66f119e-783d-4eca-a811-249d059f5e77",
+    "version": [
+      0,
+      0,
+      3
+    ]
+  },
+  "modules": [
+    {
+      "description": "§dWtrlmn Pack §71.17",
+      "type": "resources",
+      "uuid": "90bc674e-d8e1-4661-838e-c33efebcd025",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}
