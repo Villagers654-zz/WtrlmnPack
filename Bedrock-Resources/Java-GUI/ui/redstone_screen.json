@@ -1,0 +1,58 @@
+/*File modified by @CrisXolt.
+//(c) Don't use any code design without permission!*/
+{
+  "hopper_screen": {
+    "$is_container": true,
+    "variables": [
+      {
+        "requires": "$desktop_screen",
+        "$screen_dimensions": [ 176, 133 ],
+        "$screen_label": "redstone.hopper_label",
+        "$redstone_dialog_bg": "hopper_java_dx.dialog_bg_hopper",
+        "$redstone_panel_top_half": "redstone_dx.hopper_panel_top_half",
+        "$screen_content": "redstone_dx.center_screen",
+        "$screen_bg_content": "redstone_dx.full_screen"
+      },
+      {
+        "requires": "$pocket_screen",
+        "$screen_content": "pocket_containers.hopper_panel"
+      }
+    ]
+  },
+
+  "dispenser_screen": {
+    "$is_container": true,
+    "variables": [
+      {
+        "requires": "$desktop_screen",
+        "$screen_label": "redstone.dispenser_label",
+        "$redstone_dialog_bg": "dispenser_java_dx.dialog_bg_dispenser",
+        "$redstone_panel_top_half": "redstone_dx.dispenser_panel_top_half",
+        "$screen_content": "redstone_dx.center_screen",
+        "$screen_bg_content": "redstone_dx.full_screen"
+      },
+      {
+        "requires": "$pocket_screen",
+        "$screen_content": "pocket_containers.dispenser_panel"
+      }
+    ]
+  },
+
+  "dropper_screen": {
+    "$is_container": true,
+    "variables": [
+      {
+        "requires": "$desktop_screen",
+        "$screen_label": "redstone.dropper_label",
+        "$redstone_dialog_bg": "dropper_java_dx.dialog_bg_dropper",
+        "$redstone_panel_top_half": "redstone_dx.dispenser_panel_top_half",
+        "$screen_content": "redstone_dx.center_screen",
+        "$screen_bg_content": "redstone_dx.full_screen"
+      },
+      {
+        "requires": "$pocket_screen",
+        "$screen_content": "pocket_containers.dropper_panel"
+      }
+    ]
+  }
+}

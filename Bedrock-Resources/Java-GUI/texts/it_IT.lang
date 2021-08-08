@@ -1,0 +1,9 @@
+﻿##  Raid Texts Input
+raid.name=Raid	#
+raid.progress=Mobs remaining:	#
+
+##  Raid Texts Output
+bar.event.raid.name=Incursione	#
+bar.event.raid.remaining.2=Incursione - Creature rimaste: 2	#
+bar.event.raid.remaining.1=Incursione - Creature rimaste: 1	#
+bar.event.raid.remaining.0=Incursione - Creature rimaste: 0	#

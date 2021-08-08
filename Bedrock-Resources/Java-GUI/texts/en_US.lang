@@ -1,0 +1,156 @@
+##  Start
+menu.play=Play Game
+menu.options=Options...
+menu.quit=Quit Game
+menu.store=Minecraft Marketplace
+
+##  Accessibility Settings
+options.enableChatTextToSpeech=TTS For Chat
+options.enableAutoPlatformTextToSpeech=TTS with Device
+options.enableUITextToSpeech=UI Screen Reader
+options.enableOpenChatMessage=Open Chat Message
+
+##  Video Settings
+options.graphics.fancy.tooltip=Fancy graphics balances performance and quality for the majority of machines. Weather, clouds and particles may not appear behind translucent blocks or water.
+options.graphics.fast.tooltip=Fast graphics reduces the amount of visible rain and snow. Transparency effects are disabled for various blocks such as tree-leaves.
+
+options.vsync=Use VSync
+options.vsync.off=OFF
+options.vsync.on=ON
+options.vsync.adaptive=Adaptive
+
+options.renderClouds=Clouds
+
+options.maxFramerate=Max Framerate
+
+options.fov.toggle=FOV Can Be Altered
+
+options.thirdperson=Perspective
+options.thirdperson.firstperson=1st Person
+options.thirdperson.thirdpersonback=3rd Person Back
+options.thirdperson.thirdpersonfront=3rd Person Front
+
+##  Packs
+pack.available.title=§lAvailable
+pack.selected.title=§lSelected
+
+resourcePack.title=Select Resource Packs
+behaviorPack.title=Select Behavior Packs
+
+selectWorld.resourcePack=Resource
+selectWorld.behaviorPack=Behavior
+
+pack.resources.dropInfo=Drag and drop files into "resource_packs" folder directory to add Packs
+pack.behavior.dropInfo=Drag and drop files into "behavior_packs" folder directory to add Packs
+
+## Structure Editor
+
+structure_block.position=Relative Position
+structure_block.size=Structure Size
+structure_block.integrity_and_seed=Structure Integrity and Seed
+
+structure_block.mode_info.save=Save Mode - Write to File
+structure_block.mode_info.load=Load mode - Load from File
+structure_block.mode_info.export=3D Export mode - Exports to 3D File
+
+structure_block.mode.export=Export
+
+structure_block.button.save=SAVE
+structure_block.button.load=LOAD
+structure_block.button.export=EXPORT
+
+structure_block.save_to_disk=To Disk
+structure_block.save_to_memory=In Memory
+
+##  Recipe Book
+gui.recipebook.search_hint=§oSearch...
+gui.recipebook.toggleRecipes.all=Showing all
+gui.recipebook.toggleRecipes.craftable=Showing craftable
+gui.recipebook.toggleRecipes.smeltable=Showing smeltable
+gui.recipebook.toggleRecipes.blastable=Showing blastable
+gui.recipebook.toggleRecipes.smokable=Showing smokable
+
+## Creative
+inventory.binSlot=Destroy Item
+
+##  Trade v2
+merchant.deprecated=Villagers restock up to two times per day
+
+##  Worlds
+selectWorld.tooltip.beta=Don't forget to backup this world before you load it in this beta.
+
+##  Realms
+mco.selectServer.popup=Realms is a safe, simple way to enjoy an online Minecraft world with up to ten friends at a time.   It supports loads of minigames and plenty of custom worlds! Only the owner of the realm needs to pay.
+
+##  Toggle OFF/ON
+options.off=OFF
+options.on=ON
+
+##  Realms
+mco.invites.title=Pending Invites
+mco.invites.pending=New invites!
+mco.invites.nopending=No pending invites!
+mco.invites.button.accept=Accept
+mco.invites.button.reject=Reject
+
+## Gamerule
+selectWorld.allowCommands=Allow Cheats
+
+selectWorld.gameRules=Game Rules
+  
+editGamerule.title=Edit game rules
+editGamerule.default=Default: 
+
+gamerule.doImmediateRespawn=Respawn immediately
+gamerule.keepInventory=Keep inventory after death
+gamerule.mobGriefing=Allow destructive mob actions
+gamerule.naturalRegeneration=Regenerate health
+gamerule.spawnRadius=Respawn location radius
+gamerule.doMobSpawning=Spawn mobs
+gamerule.doMobSpawning.description=Some entities might have separate rules
+gamerule.doEntityDrops=Drop entity equipment
+gamerule.doEntityDrops.description=Controls drops from minecarts (including inventories), item frames, boats, etc.
+gamerule.doMobLoot=Drop mob loot
+gamerule.doMobLoot.description=Controls resource drops, including experience orbs
+gamerule.doTileDrops=Drop blocks
+gamerule.doTileDrops.description=Controls resource drops, including experience orbs
+gamerule.doDaylightCycle=Advance in-game time
+gamerule.doFireTick=Update fire
+gamerule.doWeatherCycle=Update weather
+gamerule.randomTickSpeed=Random tick speed rate
+
+gamerule.category.player=§lPlayer
+gamerule.category.mobs=§lMobs
+gamerule.category.spawning=§lSpawning
+gamerule.category.drops=§lDrops
+gamerule.category.updates=§lWorld updates
+gamerule.category.misc=§lMiscellaneous
+
+##  Raid Texts Input
+raid.name=Raid	#
+raid.progress=Mobs remaining:	#
+
+##  Raid Texts Output
+bar.event.raid.name=Raid	#
+bar.event.raid.remaining.2=Raid - Mobs remaining: 2	#
+bar.event.raid.remaining.1=Raid - Mobs remaining: 1	#
+bar.event.raid.remaining.0=Raid - Mobs remaining: 0	#
+
+##  Audio Settings
+soundCategory.ambient=Ambient/Environment
+soundCategory.block=Blocks
+soundCategory.hostile=Hostile Creatures
+soundCategory.master=Master Volume
+soundCategory.music=Music
+soundCategory.neutral=Friendly Creatures
+soundCategory.player=Players
+soundCategory.record=Jukebox/Note Blocks
+soundCategory.weather=Weather
+
+##  Online Safety
+multiplayerWarning.header=§lCaution: Third-Party Online Play
+multiplayerWarning.message=Caution: Online play is offered by third-party servers that are not owned, operated, or supervised by Mojang Studios or Microsoft. During online play, you may be exposed to unmoderated chat messages or other types of user-generated content that may not be suitable for everyone.
+multiplayerWarning.check=Do not show this screen again
+
+##  Progress
+vdx.loading.percentage=%

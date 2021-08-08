@@ -1,0 +1,144 @@
+/*File made by @CrisXolt.
+//(c) Don't use any code design without permission!*/
+{
+  "namespace": "jigsaw_editor_dx",
+
+  "data_item_title_and_toggle": {
+    "type": "panel",
+    "size": [ 308, 20 ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      {
+        "data_text_label@command_block_dx.base_label": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "color": [ 1.0, 1.0, 1.0 ],
+          "offset": [ 1, 5 ],
+          "text": "$data_title"
+        }
+      },
+      {
+        "data_toggle@settings_common_dx.option_toggle_240": {
+          "$only_value": true,
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "size": [ 240, 20 ],
+          "offset": [ -5, 0 ],
+          "$toggle_off_text": "#joint_type_toggle_text",
+          "$toggle_on_text": "#joint_type_toggle_text",
+          "$button_text_binding_type": "global",
+
+          "$toggle_name": "toggle.joint_type_toggle",
+
+          "$toggle_binding_type": "global",
+          "$toggle_state_binding_name": "#joint_type_toggle_state"
+        }
+      }
+    ]
+  },
+
+  "data_item_title_and_edit": {
+    "type": "panel",
+    "size": [ 308, 32 ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      {
+        "data_text_label@command_block_dx.base_label": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [ 1, 0 ],
+          "text": "$data_title"
+        }
+      },
+      {
+        "data_text_edit@common_dx.text_edit_box": {
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "offset": [ 1, 0 ],
+          "size": [ 302, 22 ],
+          "$text_offset": [ 5, 6.5 ],
+          "$text_edit_clipping_panel_size": [ "100%-8px", 12 ],
+          "$text_background_default": "java_gui_common.text_input_java",
+          "$text_background_hover": "java_gui_common.text_input_java_hover",
+          "max_length": 40,
+          "$text_edit_box_label_size": [ "default", 10 ],
+          "$text_box_name": "$data_text_box_name",
+          "$text_edit_box_content_binding_name": "$data_text_box_value",
+          "controls": [
+            { "custom_panel@common_dx.custom_text_edit_panel": { } }
+          ]
+        }
+      }
+    ]
+  },
+
+  "jigsaw_editor_content": {
+    "type": "panel",
+    "size": [ 308, 230 ],
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "$option_binding_name": "unset",
+    "controls": [
+      {
+        "target_pool_title_and_edit@jigsaw_editor_dx.data_item_title_and_edit": {
+          "offset": [ 0, 9 ],
+          "$data_title": "jigsaw.title.target_pool",
+          "$data_text_box_name": "text_box.target_pool_text_box",
+          "$data_text_box_value": "#target_pool_text_box_value"
+        }
+      },
+      {
+        "name_title_and_edit@jigsaw_editor_dx.data_item_title_and_edit": {
+          "offset": [ 0, 44 ],
+          "$data_title": "jigsaw.title.name",
+          "$data_text_box_name": "text_box.name_text_box",
+          "$data_text_box_value": "#name_text_box_value"
+        }
+      },
+      {
+        "target_title_and_edit@jigsaw_editor_dx.data_item_title_and_edit": {
+          "offset": [ 0, 79 ],
+          "$data_title": "jigsaw.title.target",
+          "$data_text_box_name": "text_box.target_text_box",
+          "$data_text_box_value": "#target_text_box_value"
+        }
+      },
+      {
+        "final_block_title_and_edit@jigsaw_editor_dx.data_item_title_and_edit": {
+          "offset": [ 0, 114 ],
+          "$data_title": "jigsaw.title.final_block",
+          "$data_text_box_name": "text_box.final_block_text_box",
+          "$data_text_box_value": "#final_block_text_box_value"
+        }
+      },
+      {
+        "joint_type_title_and_toggle@jigsaw_editor_dx.data_item_title_and_toggle": {
+          "offset": [ 0, 150 ],
+          "$data_title": "jigsaw.title.joint_type",
+          "$toggle_name": "toggle.joint_type_toggle,",
+          "$toggle_state_binding_name": "#joint_type_toggle_state"
+        }
+      },
+      {
+        "done_button@common_buttons_dx.main_button_150": {
+          "size": [ 150, 20 ],
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "$button_text": "jigsaw.exit.done",
+          "$pressed_button_name": "button.exit_done"
+        }
+      },
+      {
+        "cancel_button@common_buttons_dx.main_button_150": {
+          "size": [ 150, 20 ],
+          "anchor_from": "bottom_right",
+          "anchor_to": "bottom_right",
+          "$button_text": "jigsaw.exit.cancel",
+          "$pressed_button_name": "button.menu_exit"
+        }
+      }
+    ]
+  }
+}

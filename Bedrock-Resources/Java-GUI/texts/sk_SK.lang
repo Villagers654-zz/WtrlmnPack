@@ -1,0 +1,9 @@
+﻿##  Raid Texts Input
+raid.name=Raid	#
+raid.progress=Mobs remaining:	#
+
+##  Raid Texts Output
+bar.event.raid.name=Nájazd	#
+bar.event.raid.remaining.2=Nájazd - Zostávajúce tvory: 2	#
+bar.event.raid.remaining.1=Nájazd - Zostávajúce tvory: 1	#
+bar.event.raid.remaining.0=Nájazd - Zostávajúce tvory: 0	#
