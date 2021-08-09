@@ -1,29 +1,29 @@
 {
   "format_version": 2,
   "header": {
-    "description": "§dWtrlmn Pack §71.17",
+    "description": "§dWtrlmn Pack §7V3.03",
     "min_engine_version": [
       1,
       16,
       20
     ],
-    "name": "WtrlmnPack-Java-GUI",
-    "uuid": "6188fb67-6580-4c03-8b2d-3fee8de048f5",
+    "name": "WtrlmnPack",
+    "uuid": "7149634e-48fe-47b4-a6af-eabc1bbaefb2",
     "version": [
       3,
       0,
-      2
+      3
     ]
   },
   "modules": [
     {
-      "description": "§dWtrlmn Pack §71.17",
+      "description": "§dWtrlmn Pack §7V3.03",
       "type": "resources",
-      "uuid": "90bc674e-d8e1-4661-838e-c33efebcd025",
+      "uuid": "39326799-f9df-4a12-8ac9-a6ba6f578c3e",
       "version": [
+        3,
         0,
-        0,
-        1
+        3
       ]
     }
   ]
