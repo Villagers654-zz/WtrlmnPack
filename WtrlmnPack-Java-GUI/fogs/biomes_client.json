@@ -1,0 +1,5 @@
+{
+  "biomes": {
+    "default": {"fog_identifier": "newfog:fog_default"},
+  }
+}
