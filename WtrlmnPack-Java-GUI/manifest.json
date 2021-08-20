@@ -1,28 +1,28 @@
 {
   "format_version": 2,
   "header": {
-    "description": "§dWtrlmn Pack §7V4",
+    "description": "§dWtrlmn Pack §7V4.1",
     "min_engine_version": [
       1,
       16,
       0
     ],
-    "name": "WtrlmnPack V4",
-    "uuid": "971c5436-2215-404c-8832-e2128be6db69",
+    "name": "WtrlmnPack V4.1",
+    "uuid": "f82b6605-ec26-48ba-ad73-c5faf7d34aa5",
     "version": [
       4,
-      0,
+      1,
       0
     ]
   },
   "modules": [
     {
-      "description": "§dWtrlmn Pack §7V4",
+      "description": "§dWtrlmn Pack §7V4.1",
       "type": "resources",
       "uuid": "39326799-f9df-4a12-8ac9-a6ba6f578c3e",
       "version": [
         4,
-        0,
+        1,
         0
       ]
     }

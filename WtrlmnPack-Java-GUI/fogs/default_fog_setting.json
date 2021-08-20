@@ -3,16 +3,35 @@
   "minecraft:fog_settings": {
     "description": {
       "identifier": "newfog:fog_default"
+    },
+    "distance": {
+      "air": {
+        "fog_start": 200,
+        "fog_end": 200,
+        "fog_color": "#ABD2FF",
+        "render_distance_type": "render"
+      },
+      "weather": {
+        "fog_start": 200,
+        "fog_end": 200,
+        "fog_color": "#666666",
+        "render_distance_type": "render"
+      },
+      "water": {
+        "fog_start": 0.0,
+        "fog_end": 15.0,
+        "fog_color": "#44AFF5",
+        "render_distance_type": "fixed"
       },
       "lava": {
-        "fog_start": 32767,
-        "fog_end": 32767,
+        "fog_start": 8,
+        "fog_end": 8.5,
         "fog_color": "#991A00",
         "render_distance_type": "fixed"
       },
       "lava_resistance": {
-        "fog_start": 32767,
-        "fog_end": 32767,
+        "fog_start": 16,
+        "fog_end": 16.5,
         "fog_color": "#991A00",
         "render_distance_type": "fixed"
       }

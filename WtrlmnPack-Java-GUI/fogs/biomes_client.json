@@ -1,5 +1,11 @@
 {
   "biomes": {
     "default": {"fog_identifier": "newfog:fog_default"},
+    "warped_forest": {"fog_identifier": "newfog:fog_warped_forest"},
+    "crimson_forest": {"fog_identifier": "newfog:fog_crimson_forest"},
+    "soulsand_valley": {"fog_identifier": "newfog:fog_soulsand_valley"},
+    "basalt_deltas": {"fog_identifier": "newfog:fog_basalt_deltas"},
+    "hell": {"fog_identifier": "newfog:fog_hell"},
+    "the_end": {"fog_identifier": "newfog:fog_the_end"}
   }
 }
