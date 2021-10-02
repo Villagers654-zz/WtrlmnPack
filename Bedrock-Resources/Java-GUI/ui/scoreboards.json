@@ -1,9 +1,0 @@
-/*File modified by @CrisXolt.
-//(c) Don't use any code design without permission!*/
-{
-  "scoreboard_sidebar": {
-    "controls": [
-      { "scoreboard_sidebar@scoreboard_dx.scoreboard_sidebar": { } }
-    ]
-  }
-}

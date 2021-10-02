@@ -1,8 +1,0 @@
-/*File modified by @CrisXolt.
-//(c) Don't use any code design without permission!*/
-{
-  "book_screen": {
-    "$screen_content": "book_dx.center_screen",
-    "$screen_bg_content": "book_dx.full_screen"
-  }
-}

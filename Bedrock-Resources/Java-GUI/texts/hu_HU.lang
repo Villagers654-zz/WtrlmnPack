@@ -1,9 +1,0 @@
-﻿##  Raid Texts Input
-raid.name=Raid	#
-raid.progress=Mobs remaining:	#
-
-##  Raid Texts Output
-bar.event.raid.name=Rajtaütés	#
-bar.event.raid.remaining.2=Rajtaütés - Megmaradt mobok: 2	#
-bar.event.raid.remaining.1=Rajtaütés - Megmaradt mobok: 1	#
-bar.event.raid.remaining.0=Rajtaütés - Megmaradt mobok: 0	#

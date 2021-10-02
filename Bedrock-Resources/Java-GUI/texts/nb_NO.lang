@@ -1,9 +1,0 @@
-﻿##  Raid Texts Input
-raid.name=Raid	#
-raid.progress=Mobs remaining:	#
-
-##  Raid Texts Output
-bar.event.raid.name=Plyndringstokt	#
-bar.event.raid.remaining.2=Plyndringstokt - Vesener igjen: 2	#
-bar.event.raid.remaining.1=Plyndringstokt - Vesener igjen: 1	#
-bar.event.raid.remaining.0=Plyndringstokt - Vesener igjen: 0	#

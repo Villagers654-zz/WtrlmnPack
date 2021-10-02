@@ -1,8 +1,0 @@
-/*File modified by @CrisXolt.
-//(c) Don't use any code design without permission!*/
-{
-  "command_block_screen": {
-    "$screen_content": "command_block_dx.command_block_screen_content",
-    "$screen_bg_content": "java_gui_common.screen_background"
-  }
-}

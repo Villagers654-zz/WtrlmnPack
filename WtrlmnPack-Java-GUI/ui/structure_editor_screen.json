@@ -1,8 +1,0 @@
-/*File modified by @CrisXolt.
-//(c) Don't use any code design without permission!*/
-{
-  "structure_editor_screen": {
-    "$screen_content": "structure_editor_dx.structure_editor_content",
-    "$screen_bg_content": "java_gui_common.screen_background"
-  }
-}

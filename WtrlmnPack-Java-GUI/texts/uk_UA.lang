@@ -1,9 +1,0 @@
-﻿##  Raid Texts Input
-raid.name=Raid	#
-raid.progress=Mobs remaining:	#
-
-##  Raid Texts Output
-bar.event.raid.name=Наскок	#
-bar.event.raid.remaining.2=Наскок - Залишилося мобів: 2	#
-bar.event.raid.remaining.1=Наскок - Залишилося мобів: 1	#
-bar.event.raid.remaining.0=Наскок - Залишилося мобів: 0	#

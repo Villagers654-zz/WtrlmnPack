@@ -1,9 +1,0 @@
-﻿##  Raid Texts Input
-raid.name=Raid	#
-raid.progress=Mobs remaining:	#
-
-##  Raid Texts Output
-bar.event.raid.name=Raid	#
-bar.event.raid.remaining.2=Raid - Créatures restantes : 2	#
-bar.event.raid.remaining.1=Raid - Créatures restantes : 1	#
-bar.event.raid.remaining.0=Raid - Créatures restantes : 0	#
