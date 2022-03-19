@@ -5,10 +5,10 @@
     "min_engine_version": [
       1,
       16,
-      0
+      20
     ],
-    "name": "WtrlmnPack V5",
-    "uuid": "f82b6605-ec26-48ba-ad73-c5faf7d34aa5",
+    "name": "WtrlmnPack",
+    "uuid": "e3945f82-6fa3-433f-8833-413761065df8",
     "version": [
       5,
       0,
@@ -19,7 +19,7 @@
     {
       "description": "§dWtrlmn Pack §7V5",
       "type": "resources",
-      "uuid": "ab393c1c-b40f-4ef3-bffa-8b5eb65da115",
+      "uuid": "5391d631-ddff-4a7e-8ad2-9bd4f53856cf",
       "version": [
         5,
         0,
